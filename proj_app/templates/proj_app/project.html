@@ -1,0 +1,22 @@
+        {% extends 'main_app/layout.html' %}
+
+{% block title %}{{ project.title }}{% endblock %}
+
+{% block content %}
+<div class="conteiner-start">
+    <div class="pro_block">
+        <h2>Портфолио проектов</h2>
+        {% for el in project %}
+        <div class="proj">
+            <h3>{{ el.short_disc }}</h3>
+            <div class="flex_comp">
+                <img src="media/{{ el.photo_link }}" alt="photo">
+                <p>{{ el.text }}</p>
+            </div>
+            <a href="media/{{ el.attach }}" target="_blank" class="button_next">Подробное описание</a> 
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% include "main_app/test.html" %}
+{% endblock %}

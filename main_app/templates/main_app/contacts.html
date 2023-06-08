@@ -1,0 +1,30 @@
+{% extends 'main_app/layout.html' %}
+{% block content %}
+<script src="https://kit.fontawesome.com/98b7821d1f.js" crossorigin="anonymous"></script>
+<div class="container-contact">
+    <div class="box">
+        <h1>Васильева Юлия</h1><br>
+        <ul>
+            <div class="phoncont">
+                <a href="tel:+79118163736" target="_blank">
+                    <i class="fa-regular fa-phone" style="font-style: italic; font-weight: 600; margin-right: 6px;"></i>+7
+                    911 816 37 36</a>
+            </div>
+            <div class="icons">
+                <a href="https://wa.me/79118163736" target="_blank">
+                    <i class="fa-brands fa-whatsapp" style="font-weight: 600;"></i></a>
+                <a href="mailto:yulia.vasileva84@yandex.ru" target="_blank">
+                    <i class="fa-regular fa-envelope" style="margin-right: 6px"> </i></a>
+                <a href="https://t.me/MsYuVasileva" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </ul>
+        <div class="button">
+            <a href="https://docs.google.com/document/d/1WLTYXfdDK693CtovdG4mlfBSppksDbx4AmX21hwjt58/edit?usp=sharing"
+               target="_blank">Ознакомиться с резюме</a>
+        </div>
+    </div>
+</div>
+{% include "main_app/test.html" %}
+<div class="footer" style="display: block"></div>
+
+{% endblock %}

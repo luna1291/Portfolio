@@ -1,0 +1,10 @@
+{% extends 'main_app/layout.html' %}
+
+{% block title %}{{ project.title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ project.title }}</h1>
+        <p>{{ project.text }}</p>
+    </div>
+{% endblock %}

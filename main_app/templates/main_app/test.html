@@ -1,0 +1,20 @@
+{% block toppanel %}
+<script src="https://kit.fontawesome.com/98b7821d1f.js" crossorigin="anonymous"></script>
+
+<div class="toppanel">
+    <ul>
+        <li><a href="{% url 'home' %}">Главная</a></li>
+        <li><a href="{% url 'project' %}">Портфолио</a></li>
+        <li><a href="{% url 'about' %}">О себе</a></li>
+        <li><a href="{% url 'contacts' %}">Контакты</a></li>
+    </ul>
+</div>
+{% endblock %}
+{% block footer %}
+<footer class="footer">
+    <a href="tel:+79118163736" target="_blank">
+        <i class="fa-regular fa-phone"></i>+7 911 816 37 36</a>
+    <a href="mailto:yulia.vasileva84@yandex.ru" target="_blank">
+        <i class="fa-regular fa-envelope"></i>yulia.vasileva84@yandex.ru</a>
+</footer>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'main_app/layout.html' %}
+
+{% block title %}{{ quote }}{% endblock %}
+
+{% block content %}
+    {% for ind in quote %}
+        <div class="conteiner-start">
+            <div class="features">           
+                <h1>{{ ind.quote|linebreaks }}</h1>
+                <img src="static/main_app/{{ ind.photo }}" alt="photo_start">
+                <p>{{ ind.text|linebreaks }}
+            </div>
+        </div>
+    {% endfor %}
+{% include "main_app/test.html"%}
+{% endblock %}
+
+
+
